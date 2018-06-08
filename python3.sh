@@ -10,10 +10,10 @@
 
 set -x
 set -e
-if [-n "$1"];then
-    script_path=$1
-else
+if [ ! $1 ];then
     script_path=/home/suluo
+else
+    script_path=$1
 fi
 echo "your script_path is $script_path"
 
