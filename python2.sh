@@ -15,6 +15,7 @@ if [-n "$1"];then
     script_path=$1
 else
     script_path=/home/suluo
+fi
 echo "your path is $script_path"
 
 mkdir -p $script_path/softwares
@@ -40,5 +41,3 @@ wget --no-check-certificate https://pypi.python.org/packages/41/27/9a8d24e1b55bd
 tar -xzf pip-8.1.1.tar.gz
 cd pip-8.1.1
 $script_path/.local/bin/python2.7 setup.py install
-
-
