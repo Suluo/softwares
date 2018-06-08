@@ -9,8 +9,13 @@
 ############################################
 
 set -x
+set -e
 
-script_path=/home/suluo
+if [-n "$1"];then
+    script_path=$1
+else
+    script_path=/home/suluo
+echo "your path is $script_path"
 
 mkdir -p $script_path/softwares
 cd $script_path/softwares
