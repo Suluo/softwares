@@ -10,12 +10,10 @@
 
 set -x
 
-
-mkdir softwares
-cd softwares
-
 script_path=/home/suluo
 
+mkdir $script_path/softwares
+cd $script_path/softwares
 # python2.7
 wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
 tar -xzf Python-2.7.15.tgz
