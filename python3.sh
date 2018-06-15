@@ -17,7 +17,7 @@ else
 fi
 echo "your script_path is $script_path"
 
-mkdir -p /home/suluo/softwares
+mkdir -p $script_path/softwares
 cd $scrpit_path/softwares
 
 wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
